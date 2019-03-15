@@ -1,0 +1,408 @@
+/*
+    Font Used : 
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto', monospace;
+*/
+
+/*----------------------------------
+    Global Styles 
+------------------------------------*/
+.section-title,
+.section-sub-title {
+    font-family: 'Roboto', monospace;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: gray;
+}
+
+.section-sub-title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/*----------------------------------
+    Navigation Styles 
+------------------------------------*/
+.navbar {
+    font-family: 'Quicksand', sans-serif;
+    /* background: rgb(253, 253, 253); */
+    background: rgb(250, 250, 250);
+}
+
+.navbar a {
+    transition: 0.5s;
+    color: rgb(109, 109, 109);
+}
+
+.navbar a:hover {
+    color: rgb(241, 177, 170);
+}
+
+.navbar .active {
+    color: #e95d53 !important;
+}
+
+/*Navbar Icon Toggler*/
+.custom-toggler.navbar-toggler {
+    /* border-color: rgb(87, 84, 84); */
+    border: 0px solid black;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(87, 84, 84)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/*----------------------------------
+    Header Styles 
+------------------------------------*/
+#about {
+    background: rgb(112,128,144);
+    /* background: #66e7b1; */
+    padding-top: 7rem;
+}
+
+header {
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header h2,
+header p {
+    color: rgb(236, 235, 235);
+}
+
+header h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.about-header .section-title {
+    color: #F5F5DC;
+    /* font-family: 'Quicksand', sans-serif;  */
+    font-size: 2.5rem;
+}
+
+.terminal-header {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    background: rgb(94, 94, 94);
+}
+
+.terminal-content {
+    border-bottom: 1px solid rgb(94, 94, 94);
+    border-left: 1px solid rgb(94, 94, 94);
+    border-right: 1px solid rgb(94, 94, 94);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    background: black;
+    font-family: 'Roboto', monospace;
+    font-weight: 100;
+}
+
+.terminal-content p {
+    font-weight: 100
+}
+
+.fakeButton {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 5px;
+
+    background: rgb(194, 194, 194);
+    border-radius: 50%;
+}
+
+.close-button {
+    background: rgb(252, 75, 75);
+}
+
+.maximize-button {
+    background: rgb(102, 255, 102);
+}
+
+.minimize-button {
+    background: #ffff55;
+}
+
+/*
+    About Styles 
+------------------------------------*/
+.profile-image {
+    width: 8%;
+    height: 8%;
+    border-radius: 10px;
+    border: 3px solid rgb(73, 72, 72);
+    /* box-shadow: -7px 7px 1px 0px rgba(0, 0, 0, 0.76); */
+}
+
+/*----------------------------------
+    Portofolio Styles 
+------------------------------------*/
+#portofolio {
+    background: #D3F8E2;
+    padding-top: 3.5rem;
+}
+
+.px-custom {
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
+}
+
+.card {
+    width: 100%;
+}
+
+.card,
+.card-img-top {
+    border-radius: 0;
+    border: 0px;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.card-img-overlay:hover {
+    background: rgba(0, 0, 0, 0.733);
+    opacity: 1;
+}
+
+.card-img-overlay h4 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*
+    Portofolio Modal Styles 
+------------------------------------*/
+.modal-content {
+    border-width: 0;
+    border-radius: 10px;
+    background: none;
+}
+
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+.modal-title {
+    /* font-size: 2rem; */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+.modal-header,
+.modal-footer {
+    background: rgba(94, 94, 94, 0.842);
+}
+
+.modal-body {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', monospace;
+    background: rgba(0, 0, 0, 0.822);
+}
+
+.close {
+    transition: 0.3s;
+    color: rgb(128, 128, 128);
+    opacity: 1;
+}
+.close:hover {
+    color: rgb(100, 100, 100);
+}
+
+.modal-button-group:hover {
+    cursor: pointer;
+}
+
+.modal-button {
+    border-radius: 50%;
+    border: 0px;
+    width: 0.8rem;
+    height: 0.8rem;
+    opacity: 1;
+}
+
+.modal-button:focus {
+    outline: none;
+}
+
+.modal-button.close-button:focus {
+    background: rgb(173, 0, 0);
+}
+/*----------------------------------
+    Contact Styles 
+------------------------------------*/
+#contact {
+    padding-top: 6rem;
+    background: rgb(255, 151, 151);
+}
+
+.contact-container {
+    background: rgb(238, 238, 238);
+    width: 50%;
+    padding: 3rem 0;
+    border-radius: 25px;
+    border: 10px solid rgb(199, 250, 219);
+}
+
+#contact .section-title {
+    color: black;
+    font-size: 2rem;
+}
+
+.input-wrap {
+    margin-bottom: 2rem;
+}
+
+.input-wrap input, .input-wrap textarea {
+    background: rgb(238, 238, 238);
+    border: 0px solid;
+    border-bottom: 3px solid rgb(158, 158, 158);
+    transition: border-bottom 1s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.input-wrap input:focus, .input-wrap textarea:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(255, 108, 108);
+}
+
+.submit-button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+
+    background: linear-gradient(to right, rgb(255, 151, 151), rgb(255, 126, 126));
+    border: 0px;
+    border-radius: 10px;
+    width: 9rem;
+    height: 3rem;
+
+    transition: background-color 2s;
+}
+
+.submit-button:hover {
+    background: linear-gradient(to right,rgb(255, 125, 125), rgb(255, 151, 151));
+}
+
+.submit-button:focus {
+    outline: none;
+}
+
+/*----------------------------------
+    Footer Styles
+------------------------------------*/
+.fab, .fas {
+    transition: 0.3s;
+    color: rgba(158, 232, 255, 0.993);
+}
+
+.fab:hover, .fas:hover {
+    color: rgb(114, 114, 114);
+}
+/*----------------------------------
+    Color Styles 
+------------------------------------*/
+.color-bright-green {
+    color: rgb(66, 255, 66);
+}
+
+.color-bright-yellow {
+    color: #ffff8b;
+}
+
+.color-bright-blue {
+    color: aquamarine;
+}
+
+.color-bright-red {
+    color: rgb(255, 104, 104);
+}
+
+/*----------------------------------
+    Media Styles 
+------------------------------------*/
+
+@media (max-width: 1199px) {
+    .px-custom {
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse.collapse.show {
+        transition: margin-top 0.3s;
+        margin-top: 15px;
+        border-top: 2px solid salmon;
+    }
+
+    .px-custom {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+
+    .navbar-nav a {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .px-custom {
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
+    }
+
+    .about-header {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        width: 20%;
+        margin-bottom: 0.8rem;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.76);
+    }
+    .contact-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 575px) {
+    .px-custom {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-sub-title {
+        font-size: 0.8rem;
+    }
+
+    .about-header {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        width: 20%;
+        margin-bottom: 0.8rem;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.76);
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 600px;
+    }
+}
